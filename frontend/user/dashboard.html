@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord - NovaFunds</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espace Utilisateur NovaFunds</h1>
+        <p>Bienvenue sur votre tableau de bord, <strong id="user-display-name">Utilisateur</strong></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="profile.html">Mon Profil</a></li>
+            <li><a href="tasks.html">Tâches rémunérées</a></li>
+            <li><a href="task-history.html">Historique des tâches</a></li>
+            <li><a href="wallet.html">Mon Portefeuille</a></li>
+            <li><a href="withdrawals.html">Demande de Retrait</a></li>
+            <li><a href="referrals.html">Parrainage & Affiliation</a></li>
+            <li><a href="courses.html">Formation Gratuite</a></li>
+            <li><a href="quizzes.html">Quiz</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="../public/login.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Statut de votre compte</h2>
+            <p><strong>Statut actuel :</strong> <span style="color: red; font-weight: bold;">PENDING</span> (En attente d'activation)</p>
+            <p>âš ï¸ Vous devez activer votre compte pour commencer à réaliser les tâches rémunérées et retirer vos gains.</p>
+            <p><a href="../public/activation.html"><button type="button">Activer mon compte (10 USD)</button></a></p>
+        </section>
+
+        <section>
+            <h2>Résumé Financier</h2>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Solde Total</th>
+                        <th>Solde Disponible</th>
+                        <th>Revenus de Parrainage</th>
+                        <th>Revenus des Tâches</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0.00 USD</td>
+                        <td>0.00 USD</td>
+                        <td>0.00 USD</td>
+                        <td>0.00 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><a href="wallet.html">Consulter mon portefeuille</a> | <a href="withdrawals.html">Faire un retrait</a></p>
+        </section>
+
+        <section>
+            <h2>Statistiques des Tâches</h2>
+            <ul>
+                <li><strong>Tâches disponibles :</strong> 12 tâches</li>
+                <li><strong>Tâches en attente de validation :</strong> 2 tâches</li>
+                <li><strong>Tâches validées :</strong> 0 tâche</li>
+                <li><strong>Tâches refusées :</strong> 0 tâche</li>
+            </ul>
+            <p><a href="tasks.html"><button type="button">Voir les tâches disponibles</button></a></p>
+        </section>
+
+        <section>
+            <h2>Statistiques de Parrainage</h2>
+            <ul>
+                <li><strong>Votre Code de Parrainage :</strong> <code>NF-USER-12345</code></li>
+                <li><strong>Nombre total de filleuls :</strong> 0 filleul</li>
+                <li><strong>Filleuls actifs (ayant payé 10 USD) :</strong> 0 filleul</li>
+                <li><strong>Objectif Niveau 1 :</strong> Obtenir 5 filleuls actifs pendant 3 jours (Bonus : 10 USD)</li>
+            </ul>
+            <p><a href="referrals.html">Gérer mes filleuls et parrainages</a></p>
+        </section>
+
+        <section>
+            <h2>Raccourcis & Activités Récentes</h2>
+            <article>
+                <h3>Dernière Notification</h3>
+                <p><em>"Bienvenue sur NovaFunds ! Veuillez activer votre compte pour commencer les tâches."</em> (14/08/2026)</p>
+                <p><a href="notifications.html">Toutes les notifications</a></p>
+            </article>
+            <article>
+                <h3>Formation disponible</h3>
+                <p>Module 1 : <em>"Introduction à l'affiliation en ligne"</em> (Non commencé)</p>
+                <p><a href="courses.html">Accéder aux cours</a></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+

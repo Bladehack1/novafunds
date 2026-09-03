@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - NovaFunds</title>
+    
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>NovaFunds</h1>
+        <p>Connexion à votre espace membre</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="register.html">Inscription</a></li>
+            <li><a href="activation.html">Activation du compte</a></li>
+            <li><a href="terms.html">Conditions Générales</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Identifiez-vous</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Informations de connexion</legend>
+
+                    <p>
+                        <label for="login-username">Nom d'utilisateur ou Email :</label>
+                        <input type="text" id="login-username" name="username" required placeholder="Ex: jean_dupont">
+                    </p>
+
+                    <p>
+                        <label for="login-password">Mot de passe :</label>
+                        <input type="password" id="login-password" name="password" required
+                            placeholder="Votre mot de passe">
+                    </p>
+
+                    <p>
+                        <button type="submit">Se connecter</button>
+                    </p>
+                </fieldset>
+            </form>
+
+            <p>Pas encore de compte ? <a href="register.html">Créez-en un ici</a>.</p>
+            <p>Votre compte est en attente d'activation ? <a href="activation.html">Procéder à l'activation (10
+                    USD)</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds. Tous droits réservés.</p>
+    </footer>
+
+    <script src="../assets/js/login.js"></script>
+
+</body>
+
+</html>
+

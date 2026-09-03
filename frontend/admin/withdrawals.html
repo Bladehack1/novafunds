@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Retraits - NovaFunds Admin</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espace Administration NovaFunds</h1>
+        <p>Traitement et validation des demandes de retrait</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="users.html">Gestion Utilisateurs</a></li>
+            <li><a href="tasks.html">Gestion des Tâches</a></li>
+            <li><a href="validation.html">Validation des Preuves</a></li>
+            <li><a href="withdrawals.html">Gestion des Retraits</a></li>
+            <li><a href="payments.html">Vérification Activations</a></li>
+            <li><a href="referrals.html">Gestion Parrainages</a></li>
+            <li><a href="campaigns.html">Gestion Publicités</a></li>
+            <li><a href="courses.html">Gestion Formations</a></li>
+            <li><a href="admins.html">Gestion Administrateurs</a></li>
+            <li><a href="announcements.html">Annonces</a></li>
+            <li><a href="settings.html">Paramètres Généraux</a></li>
+            <li><a href="notifications.html">Notifications Admin</a></li>
+            <li><a href="../public/login.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Seuils administratifs de retrait à appliquer</h2>
+            <ul>
+                <li><strong>1er retrait :</strong> Minimum 20 USD.</li>
+                <li><strong>2e retrait :</strong> Minimum 25 USD.</li>
+                <li><strong>3e retrait et suivants :</strong> Minimum 30 USD.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Demandes de retrait en attente</h2>
+            <p>Vérifiez que l'utilisateur remplit toutes les conditions et le seuil minimum correspondant à son historique avant d'envoyer les fonds.</p>
+
+            <table border="1" cellpadding="8" width="100%">
+                <thead>
+                    <tr>
+                        <th>Date de demande</th>
+                        <th>Utilisateur</th>
+                        <th>Historique de retrait</th>
+                        <th>Montant demandé</th>
+                        <th>Méthode choisie</th>
+                        <th>Coordonnées de paiement</th>
+                        <th>Statut réglementaire</th>
+                        <th>Actions de paiement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1: Valid 1st withdrawal -->
+                    <tr>
+                        <td>14/08/2026 10:00</td>
+                        <td><strong>filleul_01</strong></td>
+                        <td>Premier retrait (Seuil: 20 USD)</td>
+                        <td><strong>22.00 USD</strong></td>
+                        <td>Mobile Money / Opérateur 1</td>
+                        <td>+225 0102030405</td>
+                        <td><span style="color: green; font-weight: bold;">Conforme</span> (22.00 &ge; 20.00)</td>
+                        <td>
+                            <form action="#" method="POST" style="display:inline;">
+                                <input type="hidden" name="withdrawal_id" value="3001">
+                                <button type="submit" name="status" value="approve" style="color: green; font-weight: bold;">Valider la transaction (Payé)</button>
+                                <button type="submit" name="status" value="reject" style="color: red;">Refuser la demande</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: Invalid 2nd withdrawal -->
+                    <tr>
+                        <td>14/08/2026 11:20</td>
+                        <td><strong>utilisateur_actif</strong></td>
+                        <td>Deuxième retrait (Seuil: 25 USD)</td>
+                        <td><strong>20.50 USD</strong></td>
+                        <td>Crypto (USDT-TRC20)</td>
+                        <td>TYu892hUisdJas928HsdaO23hKasd78</td>
+                        <td><span style="color: red; font-weight: bold;">Non conforme</span> (20.50 &lt; 25.00)</td>
+                        <td>
+                            <form action="#" method="POST" style="display:inline;">
+                                <input type="hidden" name="withdrawal_id" value="3002">
+                                <button type="submit" name="status" value="approve" disabled>Valider (Bloqué)</button>
+                                <button type="submit" name="status" value="reject" style="color: red; font-weight: bold;">Refuser (Seuil non atteint)</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Derniers retraits traités</h2>
+            <table border="1" cellpadding="8" width="100%">
+                <thead>
+                    <tr>
+                        <th>Date de demande</th>
+                        <th>Utilisateur</th>
+                        <th>Montant</th>
+                        <th>Méthode</th>
+                        <th>Date de paiement</th>
+                        <th>Statut final</th>
+                        <th>Opérateur admin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12/08/2026 14:00</td>
+                        <td>parrain_top1</td>
+                        <td>35.00 USD</td>
+                        <td>Mobile Money</td>
+                        <td>12/08/2026 17:30</td>
+                        <td><strong style="color: green;">Payé</strong></td>
+                        <td>admin_finance</td>
+                    </tr>
+                    <tr>
+                        <td>11/08/2026 09:00</td>
+                        <td>suspect_user</td>
+                        <td>20.00 USD</td>
+                        <td>Crypto</td>
+                        <td>11/08/2026 10:15</td>
+                        <td><strong style="color: red;">Refusé (Suspicion de triche)</strong></td>
+                        <td>admin_mod1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds Administration. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+

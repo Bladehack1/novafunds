@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de la Tâche - NovaFunds</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espace Utilisateur NovaFunds</h1>
+        <p>Détails et soumission de la tâche</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="profile.html">Mon Profil</a></li>
+            <li><a href="tasks.html">Tâches rémunérées</a></li>
+            <li><a href="task-history.html">Historique des tâches</a></li>
+            <li><a href="wallet.html">Mon Portefeuille</a></li>
+            <li><a href="withdrawals.html">Demande de Retrait</a></li>
+            <li><a href="referrals.html">Parrainage & Affiliation</a></li>
+            <li><a href="courses.html">Formation Gratuite</a></li>
+            <li><a href="quizzes.html">Quiz</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="../public/login.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <p><a href="tasks.html">&larr; Retour à la liste des tâches</a></p>
+            
+            <h2>Tâche : WhatsApp Status - Lancement NovaFunds</h2>
+            <p><strong>Catégorie :</strong> WhatsApp Status</p>
+            <p><strong>Récompense :</strong> 0.50 USD</p>
+            <p><strong>Délai maximal :</strong> 24 heures</p>
+            <p><strong>Statut de validation :</strong> <strong style="color: blue;">Disponible</strong></p>
+        </section>
+
+        <section>
+            <h2>Instructions pour accomplir la tâche</h2>
+            <ol>
+                <li>
+                    <strong>Téléchargez l'image ci-dessous :</strong><br>
+                    <p><em>[Image à publier sur votre statut WhatsApp]</em></p>
+                    <p><code>[Lien de téléchargement de l'image de la campagne publicitaire : À CONFIGURER]</code></p>
+                </li>
+                <li>Publiez cette image sur votre statut WhatsApp personnel.</li>
+                <li>Laissez l'image en ligne sur votre statut pendant une durée minimale pour accumuler des vues.</li>
+                <li><strong>Nombre de vues minimum requis :</strong> 50 vues.</li>
+                <li>Une fois le nombre de vues atteint (ou avant la fin des 24h), effectuez une capture d'écran claire de votre statut affichant le nombre de vues cumulées.</li>
+                <li>Uploadez cette capture d'écran via le formulaire ci-dessous.</li>
+            </ol>
+            <p>âš ï¸ <strong>Note importante :</strong> L'administration validera manuellement votre capture d'écran. Tout trucage ou fausse preuve conduira au rejet de la tâche et à la suspension potentielle du compte.</p>
+        </section>
+
+        <section>
+            <h2>Soumettre votre preuve</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Preuve de réalisation de la tâche WhatsApp</legend>
+                    
+                    <p>
+                        <label for="task-views">Nombre de vues obtenues sur la capture :</label>
+                        <input type="number" id="task-views" name="views_count" min="0" required placeholder="Ex: 53">
+                    </p>
+
+                    <p>
+                        <label for="task-proof-screenshot">Capture d'écran claire de votre statut WhatsApp :</label>
+                        <input type="file" id="task-proof-screenshot" name="proof_screenshot" accept="image/*" required>
+                    </p>
+
+                    <p>
+                        <label for="task-comment">Remarques ou commentaires (optionnel) :</label><br>
+                        <textarea id="task-comment" name="comment" rows="4" cols="50" placeholder="Entrez un commentaire pour le modérateur..."></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Soumettre la tâche pour vérification manuelle</button>
+                    </p>
+                </fieldset>
+            </form>
+            <p><em>Une fois envoyée, cette tâche passera sous le statut <strong>En attente de validation</strong> et sera inspectée manuellement par un modérateur.</em></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+

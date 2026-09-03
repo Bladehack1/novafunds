@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications Admin - NovaFunds Admin</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espace Administration NovaFunds</h1>
+        <p>Notifications et alertes de l'équipe administrative</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="users.html">Gestion Utilisateurs</a></li>
+            <li><a href="tasks.html">Gestion des Tâches</a></li>
+            <li><a href="validation.html">Validation des Preuves</a></li>
+            <li><a href="withdrawals.html">Gestion des Retraits</a></li>
+            <li><a href="payments.html">Vérification Activations</a></li>
+            <li><a href="referrals.html">Gestion Parrainages</a></li>
+            <li><a href="campaigns.html">Gestion Publicités</a></li>
+            <li><a href="courses.html">Gestion Formations</a></li>
+            <li><a href="admins.html">Gestion Administrateurs</a></li>
+            <li><a href="announcements.html">Annonces</a></li>
+            <li><a href="settings.html">Paramètres Généraux</a></li>
+            <li><a href="notifications.html">Notifications Admin</a></li>
+            <li><a href="../public/login.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Alertes système et notifications d'activité</h2>
+            
+            <table border="1" cellpadding="8" width="100%">
+                <thead>
+                    <tr>
+                        <th>Date & Heure</th>
+                        <th>Type d'alerte</th>
+                        <th>Détails de l'événement</th>
+                        <th>Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="font-weight: bold; background-color: #f9f9f9;">
+                        <td>14/08/2026 10:15</td>
+                        <td>Alerte Sécurité</td>
+                        <td>Plusieurs tentatives d'inscription infructueuses détectées depuis l'adresse IP 192.168.1.100.</td>
+                        <td><strong style="color: red;">Non lue</strong></td>
+                    </tr>
+                    <tr style="font-weight: bold; background-color: #f9f9f9;">
+                        <td>14/08/2026 09:30</td>
+                        <td>Activation envoyée</td>
+                        <td>Une nouvelle preuve d'activation de 10 USD a été soumise par l'utilisateur "marie_lourdes".</td>
+                        <td><strong style="color: red;">Non lue</strong></td>
+                    </tr>
+                    <tr>
+                        <td>13/08/2026 18:10</td>
+                        <td>Budget alerte</td>
+                        <td>La tâche "Abonnement ancienne page partenaire" a été désactivée automatiquement car le budget total (50 USD) a été entièrement épuisé.</td>
+                        <td>Lue</td>
+                    </tr>
+                    <tr>
+                        <td>13/08/2026 14:00</td>
+                        <td>Retrait demandé</td>
+                        <td>Une demande de retrait de 22.00 USD a été soumise par l'utilisateur "filleul_01".</td>
+                        <td>Lue</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>
+                <form action="#" method="POST">
+                    <button type="submit">Tout marquer comme lu</button>
+                </form>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds Administration. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+

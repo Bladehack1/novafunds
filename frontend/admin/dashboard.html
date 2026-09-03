@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - NovaFunds</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espace Administration NovaFunds</h1>
+        <p>Tableau de bord de gestion globale</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="users.html">Gestion Utilisateurs</a></li>
+            <li><a href="tasks.html">Gestion des Tâches</a></li>
+            <li><a href="validation.html">Validation des Preuves</a></li>
+            <li><a href="withdrawals.html">Gestion des Retraits</a></li>
+            <li><a href="payments.html">Vérification Activations</a></li>
+            <li><a href="referrals.html">Gestion Parrainages</a></li>
+            <li><a href="campaigns.html">Gestion Publicités</a></li>
+            <li><a href="courses.html">Gestion Formations</a></li>
+            <li><a href="admins.html">Gestion Administrateurs</a></li>
+            <li><a href="announcements.html">Annonces</a></li>
+            <li><a href="settings.html">Paramètres Généraux</a></li>
+            <li><a href="notifications.html">Notifications Admin</a></li>
+            <li><a href="../public/login.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Résumé des Statistiques</h2>
+            
+            <table border="1" cellpadding="10" width="100%">
+                <thead>
+                    <tr>
+                        <th>Utilisateurs Inscrits</th>
+                        <th>Utilisateurs Actifs</th>
+                        <th>Utilisateurs en Attente (Pending)</th>
+                        <th>Preuves de Tâches en Attente</th>
+                        <th>Activations à Vérifier</th>
+                        <th>Retraits en Attente</th>
+                        <th>Chiffre d'Affaires total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1,240</td>
+                        <td><strong style="color: green;">850</strong></td>
+                        <td><strong style="color: orange;">390</strong></td>
+                        <td><strong style="color: red;">45</strong></td>
+                        <td><strong style="color: red;">12</strong></td>
+                        <td><strong style="color: red;">8</strong></td>
+                        <td>12,400 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Alertes et Actions Urgentes</h2>
+            <ul>
+                <li>âš ï¸ <strong>12 Preuves d'activation (10 USD)</strong> en attente de vérification manuelle. <a href="payments.html">Vérifier maintenant</a></li>
+                <li>âš ï¸ <strong>8 Demandes de retrait</strong> en attente de traitement. <a href="withdrawals.html">Traiter les retraits</a></li>
+                <li>âš ï¸ <strong>45 Soumissions de captures d'écran (tâches)</strong> en attente d'évaluation par l'équipe de modération. <a href="validation.html">Valider les tâches</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Activités Récentes du Système</h2>
+            <table border="1" cellpadding="8" width="100%">
+                <thead>
+                    <tr>
+                        <th>Date/Heure</th>
+                        <th>Administrateur / Système</th>
+                        <th>Action effectuée</th>
+                        <th>Détails</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>14/08/2026 00:15</td>
+                        <td>admin_mod1</td>
+                        <td>Validation de preuve de tâche</td>
+                        <td>Tâche "WhatsApp Status" validée pour l'utilisateur <em>jean_24</em> (0.50 USD crédités)</td>
+                    </tr>
+                    <tr>
+                        <td>13/08/2026 23:30</td>
+                        <td>SuperAdmin (Système)</td>
+                        <td>Mise à jour des paramètres généraux</td>
+                        <td>Modification du seuil du 2e retrait à 25 USD</td>
+                    </tr>
+                    <tr>
+                        <td>13/08/2026 22:10</td>
+                        <td>admin_finance</td>
+                        <td>Approbation de demande de retrait</td>
+                        <td>Retrait de 22.50 USD approuvé pour <em>filleul_02</em> via Mobile Money</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds Administration. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+

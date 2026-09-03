@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Publicités - NovaFunds Admin</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espace Administration NovaFunds</h1>
+        <p>Création et suivi des campagnes publicitaires</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="users.html">Gestion Utilisateurs</a></li>
+            <li><a href="tasks.html">Gestion des Tâches</a></li>
+            <li><a href="validation.html">Validation des Preuves</a></li>
+            <li><a href="withdrawals.html">Gestion des Retraits</a></li>
+            <li><a href="payments.html">Vérification Activations</a></li>
+            <li><a href="referrals.html">Gestion Parrainages</a></li>
+            <li><a href="campaigns.html">Gestion Publicités</a></li>
+            <li><a href="courses.html">Gestion Formations</a></li>
+            <li><a href="admins.html">Gestion Administrateurs</a></li>
+            <li><a href="announcements.html">Annonces</a></li>
+            <li><a href="settings.html">Paramètres Généraux</a></li>
+            <li><a href="notifications.html">Notifications Admin</a></li>
+            <li><a href="../public/login.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Créer une nouvelle campagne publicitaire</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Paramètres de la campagne</legend>
+
+                    <p>
+                        <label for="campaign-name">Nom de la campagne :</label>
+                        <input type="text" id="campaign-name" name="name" required placeholder="Ex: Promotion Baskets Fit">
+                    </p>
+
+                    <p>
+                        <label for="campaign-desc">Description de la publicité :</label><br>
+                        <textarea id="campaign-desc" name="description" rows="3" cols="50" required placeholder="Texte à afficher sous la publicité..."></textarea>
+                    </p>
+
+                    <p>
+                        <label for="campaign-image">URL de l'image de la publicité (ou placeholder) :</label><br>
+                        <input type="text" id="campaign-image" name="image_url" required placeholder="Ex: http://images.example.com/pub1.jpg">
+                    </p>
+
+                    <p>
+                        <label for="campaign-reward">Récompense par vue / clic (USD) :</label>
+                        <input type="number" id="campaign-reward" name="reward_per_view" step="0.001" min="0.001" value="0.05" required>
+                    </p>
+
+                    <p>
+                        <label for="campaign-budget">Budget total alloué (USD) :</label>
+                        <input type="number" id="campaign-budget" name="total_budget" step="1" min="1" required placeholder="Ex: 200">
+                    </p>
+
+                    <p>
+                        <button type="submit">Lancer la campagne</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h2>Campagnes publicitaires actives</h2>
+            <table border="1" cellpadding="8" width="100%">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom de la campagne</th>
+                        <th>Récompense / clic</th>
+                        <th>Budget alloué</th>
+                        <th>Budget consommé</th>
+                        <th>Vues cumulées</th>
+                        <th>Statut</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>301</td>
+                        <td><strong>Campagne Finance-Plus</strong></td>
+                        <td>0.05 USD</td>
+                        <td>250 USD</td>
+                        <td>120 USD</td>
+                        <td>2,400 vues</td>
+                        <td><strong style="color: green;">Active</strong></td>
+                        <td>
+                            <button type="button">Suspendre</button>
+                            <button type="button">Modifier</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>302</td>
+                        <td><strong>Promotion Sneakers X</strong></td>
+                        <td>0.03 USD</td>
+                        <td>100 USD</td>
+                        <td>100 USD</td>
+                        <td>3,333 vues</td>
+                        <td><strong style="color: red;">Épuisée (Budget atteint)</strong></td>
+                        <td>
+                            <button type="button">Activer</button>
+                            <button type="button">Modifier</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds Administration. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+

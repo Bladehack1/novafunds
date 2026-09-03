@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Parrainages - NovaFunds Admin</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espace Administration NovaFunds</h1>
+        <p>Suivi du programme de parrainage et classement du Top 5</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="users.html">Gestion Utilisateurs</a></li>
+            <li><a href="tasks.html">Gestion des Tâches</a></li>
+            <li><a href="validation.html">Validation des Preuves</a></li>
+            <li><a href="withdrawals.html">Gestion des Retraits</a></li>
+            <li><a href="payments.html">Vérification Activations</a></li>
+            <li><a href="referrals.html">Gestion Parrainages</a></li>
+            <li><a href="campaigns.html">Gestion Publicités</a></li>
+            <li><a href="courses.html">Gestion Formations</a></li>
+            <li><a href="admins.html">Gestion Administrateurs</a></li>
+            <li><a href="announcements.html">Annonces</a></li>
+            <li><a href="settings.html">Paramètres Généraux</a></li>
+            <li><a href="notifications.html">Notifications Admin</a></li>
+            <li><a href="../public/login.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Règles de parrainage configurées</h2>
+            <ul>
+                <li><strong>Niveau 1 :</strong> Min 5 filleuls actifs pendant 3 jours &rarr; Récompense : 10 USD</li>
+                <li><strong>Niveau 2 :</strong> Min 10 filleuls actifs pendant 3 jours &rarr; Récompense : 20 USD</li>
+                <li><strong>Niveau 3 :</strong> Min 15 filleuls actifs pendant 5 jours &rarr; Récompense : 30 USD</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Classement Hebdomadaire : Top 5 Parrains</h2>
+            <p>Ce classement présente les 5 utilisateurs ayant recruté le plus de filleuls actifs durant la semaine en cours. Ces parrains reçoivent un bonus exceptionnel en fin de semaine.</p>
+            
+            <table border="1" cellpadding="8" width="100%">
+                <thead>
+                    <tr>
+                        <th>Rang</th>
+                        <th>Nom d'utilisateur</th>
+                        <th>Nombre de filleuls recrutés (actifs)</th>
+                        <th>Volume de commissions générées (USD)</th>
+                        <th>Bonus hebdomadaire estimé (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="font-weight: bold; background-color: #ffd700;">
+                        <td>1er</td>
+                        <td>super_parrain</td>
+                        <td>42 filleuls actifs</td>
+                        <td>84.00 USD</td>
+                        <td>50.00 USD</td>
+                    </tr>
+                    <tr style="font-weight: bold; background-color: #c0c0c0;">
+                        <td>2e</td>
+                        <td>top_recruteur_1</td>
+                        <td>31 filleuls actifs</td>
+                        <td>62.00 USD</td>
+                        <td>30.00 USD</td>
+                    </tr>
+                    <tr style="font-weight: bold; background-color: #cd7f32;">
+                        <td>3e</td>
+                        <td>reseau_gagnant</td>
+                        <td>25 filleuls actifs</td>
+                        <td>50.00 USD</td>
+                        <td>20.00 USD</td>
+                    </tr>
+                    <tr>
+                        <td>4e</td>
+                        <td>partage_facile</td>
+                        <td>18 filleuls actifs</td>
+                        <td>36.00 USD</td>
+                        <td>10.00 USD</td>
+                    </tr>
+                    <tr>
+                        <td>5e</td>
+                        <td>gains_rapides</td>
+                        <td>15 filleuls actifs</td>
+                        <td>30.00 USD</td>
+                        <td>5.00 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Historique des bonus de parrainage payés</h2>
+            <table border="1" cellpadding="8" width="100%">
+                <thead>
+                    <tr>
+                        <th>Date de traitement</th>
+                        <th>Bénéficiaire</th>
+                        <th>Palier atteint</th>
+                        <th>Condition validée</th>
+                        <th>Montant du bonus (USD)</th>
+                        <th>Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>13/08/2026 15:20</td>
+                        <td>utilisateur123</td>
+                        <td>Niveau 1</td>
+                        <td>5 filleuls actifs pendant 3 jours</td>
+                        <td>10.00 USD</td>
+                        <td><strong style="color: green;">Payé</strong></td>
+                    </tr>
+                    <tr>
+                        <td>12/08/2026 11:00</td>
+                        <td>parrain_luxe</td>
+                        <td>Niveau 2</td>
+                        <td>10 filleuls actifs pendant 3 jours</td>
+                        <td>20.00 USD</td>
+                        <td><strong style="color: green;">Payé</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds Administration. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+

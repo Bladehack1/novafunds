@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramètres Généraux - NovaFunds Admin</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espace Administration NovaFunds</h1>
+        <p>Configuration globale de la plateforme</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="users.html">Gestion Utilisateurs</a></li>
+            <li><a href="tasks.html">Gestion des Tâches</a></li>
+            <li><a href="validation.html">Validation des Preuves</a></li>
+            <li><a href="withdrawals.html">Gestion des Retraits</a></li>
+            <li><a href="payments.html">Vérification Activations</a></li>
+            <li><a href="referrals.html">Gestion Parrainages</a></li>
+            <li><a href="campaigns.html">Gestion Publicités</a></li>
+            <li><a href="courses.html">Gestion Formations</a></li>
+            <li><a href="admins.html">Gestion Administrateurs</a></li>
+            <li><a href="announcements.html">Annonces</a></li>
+            <li><a href="settings.html">Paramètres Généraux</a></li>
+            <li><a href="notifications.html">Notifications Admin</a></li>
+            <li><a href="../public/login.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Paramètres généraux de la plateforme</h2>
+            <p>Modifiez les règles financières et de parrainage de NovaFunds. Toute modification est immédiatement appliquée sur l'ensemble de la plateforme.</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Frais et activation des comptes</legend>
+                    <p>
+                        <label for="settings-activation-fee">Frais uniques d'activation (USD) :</label>
+                        <input type="number" id="settings-activation-fee" name="activation_fee" value="10.00" step="0.01" required>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Seuils minimums de retraits pour les utilisateurs (USD)</legend>
+                    <p>
+                        <label for="settings-withdraw-1">Seuil du 1er retrait :</label>
+                        <input type="number" id="settings-withdraw-1" name="withdraw_min_1" value="20.00" step="0.01" required>
+                    </p>
+                    <p>
+                        <label for="settings-withdraw-2">Seuil du 2e retrait :</label>
+                        <input type="number" id="settings-withdraw-2" name="withdraw_min_2" value="25.00" step="0.01" required>
+                    </p>
+                    <p>
+                        <label for="settings-withdraw-3">Seuil du 3e retrait et suivants :</label>
+                        <input type="number" id="settings-withdraw-3" name="withdraw_min_3" value="30.00" step="0.01" required>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Bonus de Parrainage par Niveau d'Affiliation</legend>
+                    
+                    <h3>Niveau 1 :</h3>
+                    <p>
+                        <label for="settings-ref-1-active">Filleuls actifs requis :</label>
+                        <input type="number" id="settings-ref-1-active" name="ref_1_active" value="5" required>
+                        
+                        <label for="settings-ref-1-days">Durée consécutive requise (jours) :</label>
+                        <input type="number" id="settings-ref-1-days" name="ref_1_days" value="3" required>
+                        
+                        <label for="settings-ref-1-reward">Récompense bonus (USD) :</label>
+                        <input type="number" id="settings-ref-1-reward" name="ref_1_reward" value="10.00" step="0.01" required>
+                    </p>
+
+                    <h3>Niveau 2 :</h3>
+                    <p>
+                        <label for="settings-ref-2-active">Filleuls actifs requis :</label>
+                        <input type="number" id="settings-ref-2-active" name="ref_2_active" value="10" required>
+                        
+                        <label for="settings-ref-2-days">Durée consécutive requise (jours) :</label>
+                        <input type="number" id="settings-ref-2-days" name="ref_2_days" value="3" required>
+                        
+                        <label for="settings-ref-2-reward">Récompense bonus (USD) :</label>
+                        <input type="number" id="settings-ref-2-reward" name="ref_2_reward" value="20.00" step="0.01" required>
+                    </p>
+
+                    <h3>Niveau 3 :</h3>
+                    <p>
+                        <label for="settings-ref-3-active">Filleuls actifs requis :</label>
+                        <input type="number" id="settings-ref-3-active" name="ref_3_active" value="15" required>
+                        
+                        <label for="settings-ref-3-days">Durée consécutive requise (jours) :</label>
+                        <input type="number" id="settings-ref-3-days" name="ref_3_days" value="5" required>
+                        
+                        <label for="settings-ref-3-reward">Récompense bonus (USD) :</label>
+                        <input type="number" id="settings-ref-3-reward" name="ref_3_reward" value="30.00" step="0.01" required>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Configuration des Passerelles de Paiement pour Activation (Public)</legend>
+                    
+                    <h3>Opérateur Mobile Money 1 :</h3>
+                    <p>
+                        <label for="settings-pay-op1-name">Nom du bénéficiaire :</label>
+                        <input type="text" id="settings-pay-op1-name" name="pay_op1_name" value="À CONFIGURER" required size="40"><br>
+                        
+                        <label for="settings-pay-op1-num">Numéro bénéficiaire :</label>
+                        <input type="text" id="settings-pay-op1-num" name="pay_op1_num" value="À CONFIGURER" required size="40">
+                    </p>
+
+                    <h3>Opérateur Mobile Money 2 :</h3>
+                    <p>
+                        <label for="settings-pay-op2-name">Nom du bénéficiaire :</label>
+                        <input type="text" id="settings-pay-op2-name" name="pay_op2_name" value="À CONFIGURER" required size="40"><br>
+                        
+                        <label for="settings-pay-op2-num">Numéro bénéficiaire :</label>
+                        <input type="text" id="settings-pay-op2-num" name="pay_op2_num" value="À CONFIGURER" required size="40">
+                    </p>
+
+                    <h3>Adresse Crypto :</h3>
+                    <p>
+                        <label for="settings-pay-crypto-addr">Adresse Crypto (USDT) :</label>
+                        <input type="text" id="settings-pay-crypto-addr" name="pay_crypto_addr" value="À CONFIGURER" required size="50"><br>
+                        
+                        <label for="settings-pay-crypto-id">ID de paiement :</label>
+                        <input type="text" id="settings-pay-crypto-id" name="pay_crypto_id" value="À CONFIGURER" required size="40">
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enregistrer tous les paramètres</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds Administration. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+

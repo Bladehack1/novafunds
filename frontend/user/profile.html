@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Profil - NovaFunds</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espace Utilisateur NovaFunds</h1>
+        <p>Gestion de votre profil</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="profile.html">Mon Profil</a></li>
+            <li><a href="tasks.html">Tâches rémunérées</a></li>
+            <li><a href="task-history.html">Historique des tâches</a></li>
+            <li><a href="wallet.html">Mon Portefeuille</a></li>
+            <li><a href="withdrawals.html">Demande de Retrait</a></li>
+            <li><a href="referrals.html">Parrainage & Affiliation</a></li>
+            <li><a href="courses.html">Formation Gratuite</a></li>
+            <li><a href="quizzes.html">Quiz</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="../public/login.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Informations personnelles</h2>
+            <table border="1" cellpadding="8">
+                <tr>
+                    <th>Nom d'utilisateur</th>
+                    <td>utilisateur123</td>
+                </tr>
+                <tr>
+                    <th>Adresse e-mail</th>
+                    <td>utilisateur123@example.com</td>
+                </tr>
+                <tr>
+                    <th>Numéro de téléphone</th>
+                    <td>+225 0102030405</td>
+                </tr>
+                <tr>
+                    <th>Pays</th>
+                    <td>Côte d'Ivoire</td>
+                </tr>
+                <tr>
+                    <th>Statut du compte</th>
+                    <td><strong style="color: red;">PENDING</strong> (En attente d'activation - Frais de 10 USD requis)</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Mettre à jour mes informations</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Modification du profil</legend>
+                    
+                    <p>
+                        <label for="prof-username">Nom d'utilisateur :</label>
+                        <input type="text" id="prof-username" name="username" value="utilisateur123" required>
+                    </p>
+
+                    <p>
+                        <label for="prof-email">Adresse e-mail :</label>
+                        <input type="email" id="prof-email" name="email" value="utilisateur123@example.com" required>
+                    </p>
+
+                    <p>
+                        <label for="prof-phone">Numéro de téléphone :</label>
+                        <input type="tel" id="prof-phone" name="phone" value="+225 0102030405" required>
+                    </p>
+
+                    <p>
+                        <label for="prof-password">Nouveau mot de passe (laisser vide si inchangé) :</label>
+                        <input type="password" id="prof-password" name="password">
+                    </p>
+
+                    <p>
+                        <button type="submit">Enregistrer les modifications</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+

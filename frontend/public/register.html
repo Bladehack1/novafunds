@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - NovaFunds</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>NovaFunds</h1>
+        <p>Création de votre compte utilisateur</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="login.html">Connexion</a></li>
+            <li><a href="activation.html">Activation du compte</a></li>
+            <li><a href="terms.html">Conditions Générales</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Inscrivez-vous gratuitement</h2>
+            <p>Remplissez le formulaire ci-dessous pour créer votre compte. Notez qu'après votre inscription, votre compte sera au statut <strong>PENDING</strong> et devra être activé avec des frais uniques de 10 USD pour accéder aux gains.</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Formulaire d'inscription</legend>
+
+                    <p>
+                        <label for="reg-username">Nom d'utilisateur :</label>
+                        <input type="text" id="reg-username" name="username" required placeholder="Ex: jean_dupont">
+                    </p>
+
+                    <p>
+                        <label for="reg-email">Adresse e-mail :</label>
+                        <input type="email" id="reg-email" name="email" required placeholder="Ex: jean.dupont@example.com">
+                    </p>
+
+                    <p>
+                        <label for="reg-phone">Numéro de téléphone :</label>
+                        <input type="tel" id="reg-phone" name="phone" required placeholder="Ex: +33 6 12 34 56 78">
+                    </p>
+
+                    <p>
+                        <label for="reg-country">Pays :</label>
+                        <select id="reg-country" name="country" required>
+                            <option value="">-- Sélectionnez votre pays --</option>
+                            <option value="FR">France</option>
+                            <option value="CI">Côte d'Ivoire</option>
+                            <option value="SN">Sénégal</option>
+                            <option value="CM">Cameroun</option>
+                            <option value="CD">Congo (RDC)</option>
+                            <option value="TG">Togo</option>
+                            <option value="BJ">Bénin</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="OTHER">Autre</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="reg-password">Mot de passe :</label>
+                        <input type="password" id="reg-password" name="password" required placeholder="Minimum 6 caractères">
+                    </p>
+
+                    <p>
+                        <label for="reg-confirm-password">Confirmer le mot de passe :</label>
+                        <input type="password" id="reg-confirm-password" name="confirm_password" required placeholder="Répétez le mot de passe">
+                    </p>
+
+                    <p>
+                        <label for="reg-referral">Code de parrainage (Optionnel) :</label>
+                        <input type="text" id="reg-referral" name="referral_code" placeholder="Ex: NF-12345">
+                    </p>
+
+                    <p>
+                        <label>
+                            <input type="checkbox" name="accept_terms" required>
+                            J'accepte les <a href="terms.html" target="_blank">Conditions Générales d'Utilisation</a> de NovaFunds, y compris les frais d'activation de 10 USD.
+                        </label>
+                    </p>
+
+                    <p>
+                        <button type="submit">S'inscrire</button>
+                    </p>
+                </fieldset>
+            </form>
+
+            <p>Vous possédez déjà un compte ? <a href="login.html">Connectez-vous ici</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds. Tous droits réservés.</p>
+    </footer>
+
+    <script src="../assets/js/register.js"></script>
+
+</body>
+</html>

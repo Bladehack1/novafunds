@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation des Tâches - Modérateur NovaFunds</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espace Modérateur NovaFunds</h1>
+        <p>Validation manuelle des preuves de tâches et captures d'écran</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="users.html">Gestion Utilisateurs</a></li>
+            <li><a href="tasks.html">Gestion des Tâches</a></li>
+            <li><a href="validation.html">Validation des Preuves</a></li>
+            <li><a href="withdrawals.html">Gestion des Retraits</a></li>
+            <li><a href="payments.html">Vérification Activations</a></li>
+            <li><a href="referrals.html">Gestion Parrainages</a></li>
+            <li><a href="campaigns.html">Gestion Publicités</a></li>
+            <li><a href="courses.html">Gestion Formations</a></li>
+            <li><a href="admins.html">Gestion Administrateurs</a></li>
+            <li><a href="announcements.html">Annonces</a></li>
+            <li><a href="settings.html">Paramètres Généraux</a></li>
+            <li><a href="notifications.html">Notifications Admin</a></li>
+            <li><a href="../public/login.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Soumissions de tâches en attente de vérification</h2>
+            <p>Veuillez inspecter chaque capture d'écran attentivement pour valider ou refuser les gains correspondants.</p>
+
+            <table border="1" cellpadding="8" width="100%">
+                <thead>
+                    <tr>
+                        <th>Date d'envoi</th>
+                        <th>Utilisateur</th>
+                        <th>Tâche</th>
+                        <th>Catégorie</th>
+                        <th>Récompense</th>
+                        <th>Preuve (Capture d'écran)</th>
+                        <th>Actions de validation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1: WhatsApp status validation -->
+                    <tr>
+                        <td>14/08/2026 09:15</td>
+                        <td><strong>filleul_01</strong></td>
+                        <td>WhatsApp Status - Lancement NovaFunds (Requis: 50 vues)</td>
+                        <td>WhatsApp Status</td>
+                        <td>0.50 USD</td>
+                        <td>
+                            <a href="#proof-preview-1">Voir la capture d'écran</a>
+                        </td>
+                        <td>
+                            <form action="#" method="POST">
+                                <input type="hidden" name="submission_id" value="9901">
+                                <p>
+                                    <button type="submit" name="status" value="approve" style="color: green; font-weight: bold;">Accepter et payer</button>
+                                </p>
+                                <p>
+                                    <label for="refusal-reason-1">Motif du refus (si rejeté) :</label><br>
+                                    <input type="text" id="refusal-reason-1" name="reason" placeholder="Ex: Vues insuffisantes (<50)">
+                                    <button type="submit" name="status" value="reject" style="color: red;">Refuser la preuve</button>
+                                </p>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: TikTok validation -->
+                    <tr>
+                        <td>14/08/2026 09:20</td>
+                        <td><strong>utilisateur_tiktok</strong></td>
+                        <td>Aimer et suivre NovaFunds sur TikTok</td>
+                        <td>TikTok / Likes</td>
+                        <td>0.15 USD</td>
+                        <td>
+                            <a href="#proof-preview-2">Voir la capture d'écran</a>
+                        </td>
+                        <td>
+                            <form action="#" method="POST">
+                                <input type="hidden" name="submission_id" value="9902">
+                                <p>
+                                    <button type="submit" name="status" value="approve" style="color: green; font-weight: bold;">Accepter et payer</button>
+                                </p>
+                                <p>
+                                    <label for="refusal-reason-2">Motif du refus (si rejeté) :</label><br>
+                                    <input type="text" id="refusal-reason-2" name="reason" placeholder="Ex: La capture ne montre pas le compte suivi">
+                                    <button type="submit" name="status" value="reject" style="color: red;">Refuser la preuve</button>
+                                </p>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Preview Panels Representing Screenshots -->
+        <section id="previews">
+            <h2>Visualiseur de preuves (Simulé)</h2>
+            <article id="proof-preview-1">
+                <h3>Preuve de filleul_01 (WhatsApp Status)</h3>
+                <p><strong>Détails du fichier uploade :</strong> screenshot_whatsapp_views.png (1.2 MB)</p>
+                <div style="border: 2px dashed #ccc; width: 300px; height: 400px; text-align: center; line-height: 400px; background-color: #f5f5f5;">
+                    [Capture d'écran WhatsApp : Statut de 53 vues]
+                </div>
+            </article>
+            
+            <hr>
+
+            <article id="proof-preview-2">
+                <h3>Preuve de utilisateur_tiktok (TikTok Follow)</h3>
+                <p><strong>Détails du fichier uploade :</strong> tiktok_follow_proof.jpg (850 KB)</p>
+                <div style="border: 2px dashed #ccc; width: 300px; height: 400px; text-align: center; line-height: 400px; background-color: #f5f5f5;">
+                    [Capture d'écran TikTok : Profil NovaFunds "Suivi"]
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds Administration. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+

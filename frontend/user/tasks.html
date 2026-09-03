@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tâches Rémunérées - NovaFunds</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espace Utilisateur NovaFunds</h1>
+        <p>Tâches rémunérées disponibles</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="profile.html">Mon Profil</a></li>
+            <li><a href="tasks.html">Tâches rémunérées</a></li>
+            <li><a href="task-history.html">Historique des tâches</a></li>
+            <li><a href="wallet.html">Mon Portefeuille</a></li>
+            <li><a href="withdrawals.html">Demande de Retrait</a></li>
+            <li><a href="referrals.html">Parrainage & Affiliation</a></li>
+            <li><a href="courses.html">Formation Gratuite</a></li>
+            <li><a href="quizzes.html">Quiz</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="../public/login.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Statut d'activation requis</h2>
+            <p>âš ï¸ <strong>Rappel :</strong> Vous devez activer votre compte (10 USD) pour que la rémunération des tâches soit créditée sur votre solde disponible.</p>
+            <p><a href="../public/activation.html">Activer mon compte maintenant</a></p>
+        </section>
+
+        <section>
+            <h2>Catégories de tâches</h2>
+            <ul>
+                <li><a href="#ads">Publicités à consulter</a></li>
+                <li><a href="#social">Likes & réseaux sociaux</a></li>
+                <li><a href="#tiktok">Tâches TikTok</a></li>
+                <li><a href="#whatsapp">WhatsApp Status (Vues vérifiées)</a></li>
+                <li><a href="#quizzes">Quiz rémunérés</a></li>
+            </ul>
+        </section>
+
+        <section id="task-list">
+            <h2>Liste des tâches disponibles</h2>
+            
+            <table border="1" cellpadding="10" width="100%">
+                <thead>
+                    <tr>
+                        <th>Titre de la tâche</th>
+                        <th>Catégorie</th>
+                        <th>Récompense</th>
+                        <th>Délai / Limite</th>
+                        <th>Statut</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- WhatsApp Task -->
+                    <tr>
+                        <td><strong>WhatsApp Status - Lancement NovaFunds</strong></td>
+                        <td>WhatsApp Status</td>
+                        <td>0.50 USD</td>
+                        <td>Hebdomadaire (24h max)</td>
+                        <td>Disponible</td>
+                        <td><a href="task-detail.html?task=1"><button type="button">Commencer</button></a></td>
+                    </tr>
+                    <!-- TikTok Task -->
+                    <tr>
+                        <td><strong>Aimer et suivre NovaFunds sur TikTok</strong></td>
+                        <td>TikTok / Likes</td>
+                        <td>0.15 USD</td>
+                        <td>Unique</td>
+                        <td>Disponible</td>
+                        <td><a href="task-detail.html?task=2"><button type="button">Commencer</button></a></td>
+                    </tr>
+                    <!-- Publicité Task -->
+                    <tr>
+                        <td><strong>Consulter le site partenaire WebTrade</strong></td>
+                        <td>Publicité / Visite</td>
+                        <td>0.05 USD</td>
+                        <td>Quotidien (30 secondes)</td>
+                        <td>Disponible</td>
+                        <td><a href="task-detail.html?task=3"><button type="button">Commencer</button></a></td>
+                    </tr>
+                    <!-- Quiz Task -->
+                    <tr>
+                        <td><strong>Quiz sur l'éducation financière</strong></td>
+                        <td>Quiz</td>
+                        <td>0.25 USD</td>
+                        <td>Unique</td>
+                        <td>Disponible</td>
+                        <td><a href="quizzes.html"><button type="button">Aller au Quiz</button></a></td>
+                    </tr>
+                    <!-- Pending Validation Task -->
+                    <tr>
+                        <td><strong>Partage Facebook - Promotion NovaFunds</strong></td>
+                        <td>Likes / Partages</td>
+                        <td>0.10 USD</td>
+                        <td>Réalisé</td>
+                        <td><strong style="color: orange;">En attente de validation</strong></td>
+                        <td><a href="task-detail.html?task=4"><button type="button">Détails</button></a></td>
+                    </tr>
+                    <!-- Refused Task -->
+                    <tr>
+                        <td><strong>Aimer la page Twitter NovaFunds</strong></td>
+                        <td>Likes</td>
+                        <td>0.08 USD</td>
+                        <td>Rejeté</td>
+                        <td><strong style="color: red;">Refusée (Preuve invalide)</strong></td>
+                        <td><a href="task-detail.html?task=5"><button type="button">Recommencer / Détails</button></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Formations - NovaFunds Admin</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espace Administration NovaFunds</h1>
+        <p>Création et édition des modules de formation pour les utilisateurs</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="users.html">Gestion Utilisateurs</a></li>
+            <li><a href="tasks.html">Gestion des Tâches</a></li>
+            <li><a href="validation.html">Validation des Preuves</a></li>
+            <li><a href="withdrawals.html">Gestion des Retraits</a></li>
+            <li><a href="payments.html">Vérification Activations</a></li>
+            <li><a href="referrals.html">Gestion Parrainages</a></li>
+            <li><a href="campaigns.html">Gestion Publicités</a></li>
+            <li><a href="courses.html">Gestion Formations</a></li>
+            <li><a href="admins.html">Gestion Administrateurs</a></li>
+            <li><a href="announcements.html">Annonces</a></li>
+            <li><a href="settings.html">Paramètres Généraux</a></li>
+            <li><a href="notifications.html">Notifications Admin</a></li>
+            <li><a href="../public/login.html">Se déconnecter</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Créer un nouveau module de formation</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Détails du cours</legend>
+
+                    <p>
+                        <label for="course-title">Titre du module :</label>
+                        <input type="text" id="course-title" name="title" required placeholder="Ex: Module 4 : Le marketing sur Telegram">
+                    </p>
+
+                    <p>
+                        <label for="course-desc">Description abrégée :</label><br>
+                        <textarea id="course-desc" name="description" rows="3" cols="50" required placeholder="Courte description de ce que l'utilisateur va apprendre..."></textarea>
+                    </p>
+
+                    <p>
+                        <label for="course-content">Contenu textuel du cours :</label><br>
+                        <textarea id="course-content" name="content" rows="10" cols="80" required placeholder="Écrivez le cours en format texte/HTML ici..."></textarea>
+                    </p>
+
+                    <p>
+                        <label for="course-status">Statut de publication :</label>
+                        <select id="course-status" name="status">
+                            <option value="draft">Brouillon</option>
+                            <option value="published">Publié (Visible immédiatement par les utilisateurs)</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <button type="submit">Créer le module</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h2>Modules de formation actuels</h2>
+            <table border="1" cellpadding="8" width="100%">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Titre du module</th>
+                        <th>Description</th>
+                        <th>Date de création</th>
+                        <th>Statut</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td><strong>Module 1 : Introduction à l'économie numérique</strong></td>
+                        <td>Découvrez comment les plateformes de micro-tâches fonctionnent...</td>
+                        <td>05/08/2026</td>
+                        <td><strong style="color: green;">Publié</strong></td>
+                        <td>
+                            <button type="button">Modifier</button>
+                            <button type="button">Dépublier</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td><strong>Module 2 : L'art du parrainage et de l'affiliation</strong></td>
+                        <td>Apprenez à recruter efficacement de nouveaux filleuls...</td>
+                        <td>08/08/2026</td>
+                        <td><strong style="color: green;">Publié</strong></td>
+                        <td>
+                            <button type="button">Modifier</button>
+                            <button type="button">Dépublier</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td><strong>Module 3 : Sécurité, Retraits et Bonnes Pratiques</strong></td>
+                        <td>Règles de sécurité pour protéger votre compte...</td>
+                        <td>10/08/2026</td>
+                        <td><strong style="color: green;">Publié</strong></td>
+                        <td>
+                            <button type="button">Modifier</button>
+                            <button type="button">Dépublier</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaFunds Administration. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+
